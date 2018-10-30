@@ -2,13 +2,29 @@ package br.com.hebertnunes.model;
 
 public class Contato {
 	
+	private int id;
 	private String nome;
 	private String sobrenome;
 	private String telefone;
 	private String celular;
 	private String email;
 	
+	public Contato(String nome, String sobrenome, String telefone, String celular, String email) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.telefone = telefone;
+		this.celular = celular;
+		this.email = email;
+	}
 	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getNome() {
 		return nome;
 	}
